@@ -5,7 +5,7 @@ type BlueButtonprops =  {
 title: string;
 };
 
-const BlueButton:React.FC<BlueButtonprops> = ({title ="Button" }) =>{
+const BlueButton:React.FC<BlueButtonprops> = ({title ="Button" }) => {
 return(
     <TouchableOpacity  style={styles.button}> <Text style={styles.text}>{title}</Text></TouchableOpacity>
 )

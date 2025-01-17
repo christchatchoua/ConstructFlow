@@ -1,0 +1,47 @@
+Hi this is my instructions on working with the project made by chris emmanuel
+
+Normally if you can read this it means you are connected to the main branch 
+
+To be up to date with everyone enter the gitbash terminal and type
+$git checkout main // to ensure you are in the main branch
+
+$ git pull origin main // to request the latest changes
+$ git commit // to be totally up to date
+Please everyone one Samira , Othny , Miguel , Armel and Raphy should create a .txt file with their name where they describe their work , I will use mine
+to describe my work and give some info 
+
+I created what we call " groups" (auth) , (supervisor) , (worker) these are like grouping a particular function of the mobile app together 
+with the screens , if you create a group like (banana) you will need a screen called loginBanana.tsx to login your banana or bananaDashboard.tsx
+And a _layout.tsx to design how each screen comes like in my (auth) group 
+
+ import { Stack } from "expo-router";
+
+export default function RootLayout() {
+  return (
+  <Stack>
+    <Stack.Screen name="index" options={{title:"Login",headerShown:false}}  />
+    <Stack.Screen name="signup" options={{title:"signup" , headerShown:false}}  />
+  </Stack>
+  );
+};
+
+index screen which is my login screen comes first and signup comes second , headershown false is to not have that strange bar on top
+after creating a group you need to go in the main app folder layout file and add it example
+
+import { Stack } from "expo-router";
+
+export default function RootLayout() {
+  return (
+  <Stack>
+    <Stack.Screen name="(auth)" options={{headerShown:false}}/>
+    <Stack.Screen name="(supervisor)" options={{headerShown:false}}/>
+    <Stack.Screen name="(worker)" options={{headerShown:false}}/>
+    <Stack.Screen name="+not-found.tsx" options={{headerShown:false}}/>
+  </Stack>
+  );
+};
+the not found screen is if the user types a fake route so let me handle that screen OK 
+I will now create a database with either sqlite or asyncstorage with the help of Samira
+Remember if your expo or code does not work , it is not the end of the world , we are there to help you
+If you can not read this to the end , therefore you can not code 200 lines 
+
