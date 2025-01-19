@@ -2,6 +2,7 @@ import { Text, View, SafeAreaView,StyleSheet } from "react-native";
 import CustomTextInput from '@/components/CustomTextInput';
 import BlueButton from '@/components/BlueButton';
 import {Link} from 'expo-router';
+//import {insertUser, createUserTable } from '../database/Queries';
 
 export default function signup() {
   return (
