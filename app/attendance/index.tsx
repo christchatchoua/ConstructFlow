@@ -54,3 +54,61 @@ const App = () => {
     </View>
   );
 };
+
+const styles = StyleSheet.create({
+    container: {
+      flex: 1,
+      justifyContent: 'center',
+      alignItems: 'center',
+      backgroundColor: '#f0f0f0',
+      padding: 20,
+    },
+    header: {
+      fontSize: 24,
+      fontWeight: 'bold',
+      marginBottom: 20,
+    },
+    buttonsContainer: {
+      marginBottom: 20,
+    },
+    button: {
+      backgroundColor: '#4CAF50',
+      padding: 10,
+      marginVertical: 5,
+      borderRadius: 5,
+      alignItems: 'center',
+    },
+    buttonText: {
+      color: '#fff',
+      fontSize: 16,
+    },
+    resetButton: {
+      backgroundColor: '#f44336',
+      padding: 10,
+      marginTop: 20,
+      borderRadius: 5,
+      alignItems: 'center',
+    },
+    resetButtonText: {
+      color: '#fff',
+      fontSize: 16,
+    },
+    list: {
+      width: '100%',
+    },
+    item: {
+      backgroundColor: '#e0e0e0',
+      padding: 15,
+      marginVertical: 5,
+      borderRadius: 5,
+    },
+    text: {
+      fontSize: 16,
+    },
+    dateTime: {
+      fontSize: 12,
+      color: '#888',
+    },
+  });
+  
+  export default App;
